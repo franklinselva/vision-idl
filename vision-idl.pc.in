@@ -1,0 +1,11 @@
+Name: @PACKAGE_NAME@
+Version: @PACKAGE_VERSION@
+Description: Some common idl files for the vision framework
+Requires: openrobots2-idl >= 2.0
+
+prefix=@prefix@
+datarootdir=@datarootdir@
+datadir=@datadir@
+idldir=${datadir}/idl/vision-idl
+
+Cflags: -I${idldir}

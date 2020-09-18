@@ -31,7 +31,7 @@ module or {
 
         // Intrinsic calibration (geometry and distortion)
         struct calibration {
-            float fx, fy, cx, cy, gammma;
+            float fx, fy, cx, cy, gamma;
         };
         struct distortion {
             float k1, k2, k3, p1, p2;

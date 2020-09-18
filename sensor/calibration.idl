@@ -21,28 +21,31 @@
  *
  *                                                  Martin Jacquet - June 2020
  */
-#ifndef OR_IMAGE
-#define OR_IMAGE
+#ifndef OR_CALIB
+#define OR_CALIB
 
 module or {
     module sensor {
 
-    /* ---- Camera calibration -------------------------------------------- */
-    // Calibration matrix (fx, fy, cx, cy, gamma) and Distortion coefficients
-    struct intrinsics_s {
-        sequence<float,5>   calib, disto;
-    };
-    // Extrinsic transformation from body to camera frame
-    struct extrinsics_s {
-        struct {
+        /* ---- Camera calibration -------------------------------------------- */
+        // Calibration matrix (fx, fy, cx, cy, gamma) and Distortion coefficients
+        struct intrinsics {
+            sequence<float,5>   calib, disto;
+        };
+
+        // Extrinsic transformation from body to camera frame
+        struct rotation {
             float roll, pitch, yaw;
-        } rot;
-        struct {
+        };
+        struct translation {
             float tx, ty, tz;
-        } trans;
-    };
+        };
+        struct extrinsics {
+            rotation rot;
+            translation trans;
+        };
 
     };
 };
 
-#endif /* OR_IMAGE */
+#endif /* OR_CALIB */

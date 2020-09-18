@@ -30,7 +30,7 @@ module or {
   module sensor {
 
         /* ---- Image Frame struct -------------------------------------------- */
-        struct frame_s {
+        struct frame {
             or::time::ts    ts;
             unsigned short  height;
             unsigned short  width;

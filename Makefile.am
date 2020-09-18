@@ -5,7 +5,7 @@ pkgconfigdir=	$(libdir)/pkgconfig
 pkgconfig_DATA=\
 	vision-idl.pc
 
-idldir=		$(datadir)/idl/vision-idl/
+idldir=		$(datadir)/idl/vision-idl/or
 nobase_dist_idl_DATA=\
 	sensor/camera.gen		\
 	sensor/depth.idl		\

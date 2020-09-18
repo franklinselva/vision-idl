@@ -40,6 +40,7 @@ interface or_camera {
     port out  or::sensor::frame       frame;
     port out  or::sensor::intrinsics  intrinsics;
     port out  or::sensor::extrinsics  extrinsics;
+
 };
 
 #endif /* OR_CAMERA */

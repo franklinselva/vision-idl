@@ -49,8 +49,8 @@ module or {
             float tx, ty, tz;
         };
         struct extrinsics {
-            rotation    rot;
             translation trans;
+            rotation    rot;
         };
 
     };

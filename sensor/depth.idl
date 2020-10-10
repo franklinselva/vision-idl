@@ -44,7 +44,7 @@ module or {
             unsigned long length;   // Number of points in cloud
 
             sequence<pos> points;
-            optional<sequence<color>>  colors;
+            optional<sequence<color> >  colors;
         };
 
     };

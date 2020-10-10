@@ -30,7 +30,11 @@
 interface or_camera {
 
     struct info {
+        struct size_s {
+            unsigned short w, h;
+        } size;
         unsigned short frequency;
+        string<8> format;   // Y8, Y16, RBG8, RGBA8...
         boolean started;
     };
 

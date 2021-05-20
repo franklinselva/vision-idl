@@ -10,4 +10,5 @@ nobase_dist_idl_DATA=\
 	sensor/camera.gen		\
 	sensor/depth.idl		\
 	sensor/image.idl		\
-	sensor/calibration.idl
+	sensor/calibration.idl	\
+	sensor/pixel.idl

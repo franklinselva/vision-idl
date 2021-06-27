@@ -30,12 +30,15 @@ module or {
     module sensor {
 
         /* ---- Pixel position in image frame ----------------------------- */
-        struct pixel {
-            or::time::ts    ts;
+        struct pix_s {
             unsigned short  x;
             unsigned short  y;
         };
 
+        struct pixel {
+            or::time::ts    ts;
+            optional<pix_s> pix;
+        };
     };
 };
 

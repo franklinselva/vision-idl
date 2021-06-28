@@ -36,12 +36,13 @@ interface or_camera {
         unsigned short frequency;
         string<8> format;   // Y8, Y16, RBG8, RGBA8...
         boolean started;
+        short compression_rate;
     };
 
     native pipe;  // encapsulate the pipe streaming from the device
     native data;  // data structure for the image specific to the device
 
-    port out  or::sensor::frame       frame;
+    port multiple out   or::sensor::frame  frame;
     port out  or::sensor::intrinsics  intrinsics;
     port out  or::sensor::extrinsics  extrinsics;
 

@@ -40,8 +40,8 @@ module or {
 
         /* ---- Point cloud struct -------------------------------------------- */
         struct pc {
-            or::time::ts  ts;	    // Timestamp
-            unsigned long length;   // Number of points in cloud
+            or::time::ts  ts;
+            unsigned long length;
 
             sequence<pos> points;
             optional<sequence<color> >  colors;
